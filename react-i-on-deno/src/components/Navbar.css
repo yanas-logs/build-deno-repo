@@ -1,0 +1,51 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.logo {
+  height: 32px;
+}
+
+.logo.react {
+  animation: spin 20s linear infinite;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+}
+
+.navbar-right a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.navbar-right a:hover {
+  color: #646cff;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
